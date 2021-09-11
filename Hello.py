@@ -4,5 +4,6 @@
 
 def main():
     print("Hello, instructor! i appologize for the lateness of this assignment!")
+    print("Goodbye")
 
 main() 
