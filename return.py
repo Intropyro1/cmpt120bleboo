@@ -6,6 +6,6 @@ def string_beg_ends(str):
         return ''
         
     return str[0:2] + str[-2:]
-print(string_beg_ends('Jump'))
+print(string_beg_ends('w3resource'))
 print(string_beg_ends('ju'))
 print(string_beg_ends('j'))
