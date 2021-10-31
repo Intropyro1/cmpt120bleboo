@@ -8,7 +8,7 @@ import math
 def main():
    
       
-        h = Graph('Circle intersection',600,300)
+        h = GraphWin('Circle intersection',600,300)
         h.setCoords(0,0,24,12)
         h.setBackground('White')
        
