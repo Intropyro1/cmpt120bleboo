@@ -2,18 +2,16 @@
 
 #program that computes the intersection of a circle with a horizontal line and displays the information textually and graphically.
 
-from graphics import *
+from graphics.py import *
 import math
 
 def main():
    
       
-        h = Graph('Circle intersection',600,300)
+        h = GraphWin('Circle intersection',600,300)
         h.setCoords(0,0,24,12)
         h.setBackground('White')
-       
-       
-     
+        
         chart = Rectangle(Point(1,11),Point(11,1))
         chart.setFill('grey')
         chart.draw(h)
