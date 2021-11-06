@@ -88,7 +88,7 @@ def main():
         
         #d = xor_g(a,b)
         sum = 0.0
-        sum = xor_g(d,c)
+        sum = xor_g(d,c) 
         #g = and_g(d,c)
         #e = and_g(a,b)
         out = xor_g(g,e)
