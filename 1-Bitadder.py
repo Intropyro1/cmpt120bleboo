@@ -1,9 +1,12 @@
 #1-Bit adder
 #this is a one bit adder taking into account the carry in and carry out and sum outputs
+
+
+
 def main():
-    a = input("Enter 'A' value(0-1):  ")
-    b = input("Enter 'B' value(0-1): ")
-    c = input("Enter 'Cin' value(0-1): ")     
+    a = int(input("Enter 'A' value(0-1):  "))
+    b = int(input("Enter 'B' value(0-1): "))
+    c = int(input("Enter 'Cin' value(0-1): "))     
 
     def bitadder(a,b,c):
         #Inputs(a,b,c)
@@ -12,57 +15,82 @@ def main():
         #cin = input("Enter 'Cin' value(0-1): ")
         #Outputs(sum(a,b),co)
         #
-        def xor_g(a,b):
-            if a != "1":
-                if b == "0":
-                    if a == "0" and b == "0":
-                        if a or b == "0":
-                            return("0")
-                        else:
-                            return("1")
-            if b == "1":
-                if a != "0":
-                    if a == "1" and b == "1":
-                        if a or b == "1":
-                            return("0")
-                        else:
-                            return("1")
-            if c == "1":
-                if d == "0":
-                    if c == "0" and d == "1":
-                        if c or d == "0":
-                            return("1")
-                        else:
-                            return("0")
-                if c == "0":
-                    if d == "1":
-                        if c == "1" and d == "0":
-                            if c or d == "1":
-                                return("1")
+        def xor_g(a,b):            
+            def qne(a,b):
+                if a != "1":
+                    if b == "0":
+                        if a == "0" and b == "0":
+                            if a == "0" or b == "0":
+                                print("0")
                             else:
-                                return("0")
-                       
-                #XOR logic gate
+                                one(a,b)
+            qne(a,b)
+            def one(a,b):
+                if a != "1":
+                    if b == "1":
+                        if a == "0" and b == "1":
+                            if a == "1" or b == "1":
+                                print("1")
+                            else:
+                                zero(a,b)
+            one(a,b)
+            def zero(a,b):
+                if a != "0":
+                    if b == "0":
+                        if a == "1" and b == "0":
+                            if a == "1" or b == "0":
+                                print("1")
+                            else:
+                                xne(a,b)
+            zero(a,b)
+            def xne(a,b):
+                if a != "0":
+                    if b == "1":
+                        if a == "1" and b == "1":
+                            if a == "1" or b == "1":
+                                print("0")
+                            else:
+                                xero(a,b)
+            xne(a,b)
         xor_g(a,b)
+        d = xor_g(a,b)
+        def fox(a,b):
+            if d != "1":
+                if c == "0":
+                    if d == "0" and c == "0":
+                        print("1")
+                    else:
+                        xnd(d,c)
+        fox(a,b)
+
         def and_g(a,b):
             if a == "1" and b == "1":
-                return("1")
+                print("1")
             else:
-                return("0")
+                print("0")
                 #AND logic gate
         and_g(a,b)
-
-        def or_g(a,b):
-            if a == "0" or b == "0":
-                return("0")
+        def xnd(d,c):
+            if d == "1" and c == "1":
+                print("1")
             else:
-                return("1")
-                #OR logic gate
-        or_g(a,b)
-        d = xor_g(a,b)
-        sum = xor_g(d,c)
-        g = and_g(d,c)
+                print("0")
+        xnd(d,c)
         e = and_g(a,b)
+        g = and_g(d,c)
+        def or_g(a,b):
+            if (a == "0" and b == "0") or (e == "0" and g == "1"):
+                print("0")
+            else:
+                print("1")
+                    #OR logic gate
+        or_g(a,b)
+        
+        #d = xor_g(a,b)
+        sum = 0.0
+        sum = xor_g(d,c)
+        #g = and_g(d,c)
+        #e = and_g(a,b)
         out = xor_g(g,e)
         print(sum,out)
         #for 'None' in sum:
@@ -70,4 +98,7 @@ def main():
         #else:
             #return sum
     bitadder(a,b,c)
+
+    #def bitadderfix(a,b,c):
+        
 main()
