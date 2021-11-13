@@ -9,7 +9,7 @@ def testCraps(n):
     total = 0
     count = 0.0
     Counts = float(count)
-    return(float(Counts/total))
+    return(float(Counts/total)) # This will always fail
 testCraps(n)
 
 def loop():

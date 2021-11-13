@@ -5,6 +5,7 @@
 import random
 from collections import defaultdict
 
+# Where are you checking for 5 of a kind?
 def main():
     dice = int(input("Enter the number of dice: "))
     sides = int(input("Enter the number of sides: "))
