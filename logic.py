@@ -57,8 +57,8 @@ def xor_g(a,b):
                     print("0")
                 else:
                     print("1")
-    if a == "1":
-        if b != "0":
+    if b != "0":
+        if a == "1":
             if a == "1" and b == "1":
                 if a or b == "1":
                     print("0")
