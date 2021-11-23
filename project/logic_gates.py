@@ -7,13 +7,6 @@ print("These values are not applicable just to help the bypass the error")
 
 
 def and_g(a,b):
-<<<<<<< HEAD
-    print("This is the and logic gate")
-    if a == 1 and b == 1:
-        print(1)
-    else:
-        print(0)
-=======
     #print("This is the and logic gate")
     if a == 1 and b == 1:
         #print()
@@ -21,19 +14,10 @@ def and_g(a,b):
     else:
         return 0
         #print("0")
->>>>>>> be1b46f3580cd2a4832182be9c06b67475696929
         #AND logic gate
 #and_g(a,b)
 
 def or_g(a,b):
-<<<<<<< HEAD
-    a = input("Enter a value between 0 and 1 for a: ")
-    b = input("Enter a value between 0 and 1 for b: ")
-    if a == 0 or b == 0:
-        print(0)
-    else:
-        print(1)
-=======
     #a = input("Enter a value between 0 and 1 for a: ")
     #b = input("Enter a value between 0 and 1 for b: ")
     if a == 0 and b == 0:
@@ -42,18 +26,9 @@ def or_g(a,b):
     else:
         return 1
         #print("1")
->>>>>>> be1b46f3580cd2a4832182be9c06b67475696929
         #OR logic gate
 #or_g(a,b)
 
-<<<<<<< HEAD
-def not_g(a,b):
-    a = input("Enter a value between 0 and 1 for a: ")
-    if a != 1:
-        print(1)
-    else:
-        print(0)
-=======
 def not_g(a):
     #a = input("Enter a value between 0 and 1 for a: ")
     if a != 1:
@@ -62,7 +37,6 @@ def not_g(a):
     else:
         return 0
         #print("0")
->>>>>>> be1b46f3580cd2a4832182be9c06b67475696929
         #Not logic gate
 #not_g(a,b)
 
