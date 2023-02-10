@@ -31,7 +31,8 @@ class Tracker:
 
     def update(self):
     # Moves the circle in the window to the current position of the
-    # object being tracked.
+    # object being tracked.
+
         Tracker = Circle(Point(self.xpos,self.ypos),25)
         Tracker.move(Point(Projectile.update(self.xpos,time),Projectile.update(self.ypos,time)))
         Projectile.update()
