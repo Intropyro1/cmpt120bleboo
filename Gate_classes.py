@@ -10,7 +10,7 @@ class DigitalValue:
 
     def __init__(self,p,value):
 
-        self.p = Point
+        self.p = Point # JA: ??
         self.value == 0
 #I set value equal to 0 but it can be modified
 
@@ -23,7 +23,7 @@ class DigitalValue:
         self.value = 0+value
 
     def draw(self,win,type):
-
+        # JA: Where is the value displayed?
         self.win = GraphWin("object",300,300)
         I = Entry(self.p,10)
         O = Text(self.p,10)
@@ -38,9 +38,10 @@ class DigitalValue:
 
 class And:
     def __init__(self,p,a,b):
-        self.p = Point
+        self.p = Point # JA: ??
         self.a == a
         self.b == b
+        # JA: Where is the logic of the gate?
         # The output DigitalValue should be stored also
 
     def setA(self):
@@ -57,10 +58,6 @@ class And:
         self.win = GraphWin("andgate",500,500)
         draw_and(50,50,60,win)
         
-        
-
-
-
 class Or:
     def __init__(self,p,a,b):
         self.p = Point
@@ -163,7 +160,7 @@ class Connection:
         self.to = to
 
     def getFrom(self):
-        return DigitalValue()
+        return DigitalValue() # JA: A new one?
 
     def getTo(self):
         return DigitalValue()

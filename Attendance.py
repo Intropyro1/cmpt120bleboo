@@ -29,6 +29,9 @@ def storage():
         stor.append(A)
     return stor
 
+# JA: It's generlly not a good idea to have the input of the data
+# in this class methods.
+# JA: What about find and find by state?
 def getAttendee():
     name = input("Enter the name of attendee: ")
     company = input("Enter the name of the Company: ")
